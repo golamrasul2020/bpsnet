@@ -1,0 +1,50 @@
+
+@media (max-width:991.98px){
+  .header-top{ padding:12px 0; }
+  .site-logo-img{ height:54px; }
+  .site-tagline{ display:none; }
+  .header-top-actions{ display:none!important; }
+  .main-navbar .navbar-collapse{
+    background:var(--primary-dark);
+    border-radius:0 0 12px 12px;
+    padding:6px 16px 18px;
+  }
+}
+@media (max-width:575.98px){
+  .site-title{ font-size:1rem; }
+  .site-logo-img{ height:44px; }
+}
+
+@media (max-width:1199.98px){
+  .hero-title{font-size:2.5rem}
+}
+@media (max-width:991.98px){
+  .top-bar-info li:nth-child(3){display:none!important}
+  .mega-menu{position:static;box-shadow:none;padding:16px 0;border-radius:0;border-top:1px solid var(--border-color)}
+  .mega-menu .row{row-gap:20px!important}
+  .mega-feature-box{margin-top:10px}
+  .navbar-collapse{max-height:80vh;overflow-y:auto;padding-top:10px}
+  .hero-carousel .carousel-item{height:70vh;min-height:460px}
+  .hero-title{font-size:2rem}
+  .hero-text{font-size:1rem}
+  .about-badge{left:14px;bottom:-18px;padding:14px 18px}
+  .quick-actions{margin-top:-40px}
+  .section-pad{padding:60px 0}
+}
+@media (max-width:767.98px){
+  .top-bar-info span{display:none}
+  .hero-carousel .carousel-item{height:60vh;min-height:420px}
+  .hero-title{font-size:1.6rem}
+  .hero-caption{align-items:flex-end;padding-bottom:40px}
+  .page-header{padding:70px 0 40px}
+  .page-header h1{font-size:1.7rem}
+  .newsletter-box{padding:28px}
+  .cta-strip{padding:32px}
+  .brand-sub{display:none}
+}
+@media (max-width:575.98px){
+  .hero-btns .btn{width:100%;margin-right:0}
+  .stat-num{font-size:2rem}
+  .contact-form-box,.membership-form-box{padding:24px}
+  .brand-title{font-size:.9rem}
+}

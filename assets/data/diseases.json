@@ -1,0 +1,110 @@
+[
+  {
+    "id": "cucumber-mosaic",
+    "crop": "Cucumber",
+    "diseaseName": "Cucumber Mosaic Virus Disease",
+    "pathogenType": "Viral",
+    "scientificName": "Cucumber mosaic virus (CMV)",
+    "region": "Nationwide",
+    "symptoms": "Mosaic mottling, leaf distortion, stunted vines, deformed fruit.",
+    "cause": "Aphid-transmitted virus; spreads rapidly in warm weather.",
+    "management": "Rogue and destroy infected plants; control aphid vectors with recommended insecticides.",
+    "prevention": "Use virus-free seedlings, reflective mulches, and resistant varieties where available."
+  },
+  {
+    "id": "chilli-anthracnose",
+    "crop": "Chilli",
+    "diseaseName": "Chilli Anthracnose",
+    "pathogenType": "Fungal",
+    "scientificName": "Colletotrichum capsici",
+    "region": "Nationwide",
+    "symptoms": "Sunken, circular dark lesions with concentric rings on ripening fruit.",
+    "cause": "Fungal infection favored by warm, humid conditions and rain splash.",
+    "management": "Apply recommended fungicides (e.g., Mancozeb/Carbendazim); remove infected fruits promptly.",
+    "prevention": "Seed treatment, crop rotation, and use of tolerant varieties."
+  },
+  {
+    "id": "powdery-mildew",
+    "crop": "Cucurbits",
+    "diseaseName": "Powdery Mildew",
+    "pathogenType": "Fungal",
+    "scientificName": "Podosphaera xanthii / Erysiphe cichoracearum",
+    "region": "Nationwide",
+    "symptoms": "White powdery fungal patches on leaf surfaces and stems.",
+    "cause": "Airborne fungal spores, favored by warm days and cool, humid nights.",
+    "management": "Sulfur-based or systemic fungicides; neem-based botanical sprays.",
+    "prevention": "Proper plant spacing for airflow; avoid excess nitrogen; resistant cultivars."
+  },
+  {
+    "id": "yardlong-bean-mosaic",
+    "crop": "Yard-long Bean",
+    "diseaseName": "Yard-long Bean Mosaic Virus Disease",
+    "pathogenType": "Viral",
+    "scientificName": "Bean common mosaic virus (BCMV)",
+    "region": "Nationwide",
+    "symptoms": "Leaf mosaic and curling, vine stunting, malformed pods.",
+    "cause": "Transmitted by aphid vectors between host plants.",
+    "management": "Remove infected plants early; manage aphid populations.",
+    "prevention": "Use certified virus-free seed and tolerant varieties."
+  },
+  {
+    "id": "guava-anthracnose",
+    "crop": "Guava",
+    "diseaseName": "Guava Anthracnose",
+    "pathogenType": "Fungal",
+    "scientificName": "Colletotrichum gloeosporioides",
+    "region": "Nationwide",
+    "symptoms": "Dark, sunken spots on fruit and leaves; fruit rot at maturity.",
+    "cause": "Fungal infection favored by humid conditions and poor orchard sanitation.",
+    "management": "Timely fungicide sprays and removal of infected/mummified fruit.",
+    "prevention": "Regular pruning for airflow, orchard sanitation, careful post-harvest handling."
+  },
+  {
+    "id": "citrus-canker",
+    "crop": "Citrus",
+    "diseaseName": "Citrus Canker",
+    "pathogenType": "Bacterial",
+    "scientificName": "Xanthomonas citri subsp. citri",
+    "region": "Nationwide",
+    "symptoms": "Raised, corky lesions with a yellow halo on leaves, twigs and fruit.",
+    "cause": "Bacterial pathogen spread via wind-driven rain and contaminated tools.",
+    "management": "Copper-based bactericide sprays; prune and destroy infected material.",
+    "prevention": "Use disease-free planting material; establish windbreaks."
+  },
+  {
+    "id": "downy-mildew",
+    "crop": "Cucurbits",
+    "diseaseName": "Downy Mildew",
+    "pathogenType": "Oomycete",
+    "scientificName": "Pseudoperonospora cubensis",
+    "region": "Nationwide",
+    "symptoms": "Angular yellow lesions on upper leaf surface; grayish mold beneath.",
+    "cause": "Oomycete pathogen favored by cool, moist conditions and leaf wetness.",
+    "management": "Targeted fungicides (e.g., Metalaxyl-based); remove crop debris.",
+    "prevention": "Resistant varieties; avoid overhead irrigation; ensure field drainage."
+  },
+  {
+    "id": "okra-yvmv",
+    "crop": "Okra",
+    "diseaseName": "Okra Yellow Vein Mosaic Virus",
+    "pathogenType": "Viral",
+    "scientificName": "Bhendi yellow vein mosaic virus (BYVMV)",
+    "region": "Nationwide",
+    "symptoms": "Bright yellow vein network, leaf yellowing, and reduced fruit yield.",
+    "cause": "Whitefly-transmitted begomovirus.",
+    "management": "Control whitefly populations; uproot and destroy infected plants.",
+    "prevention": "Tolerant varieties, yellow sticky traps, early-season vector monitoring."
+  },
+  {
+    "id": "tomato-cercospora",
+    "crop": "Tomato",
+    "diseaseName": "Cercospora Leaf Spot of Tomato",
+    "pathogenType": "Fungal",
+    "scientificName": "Cercospora spp. / Pseudocercospora fuligena",
+    "region": "Nationwide",
+    "symptoms": "Dark brown to black leaf spots surrounded by a yellow halo.",
+    "cause": "Fungal infection favored by warm, humid weather and dense canopy.",
+    "management": "Recommended fungicide rotation; remove and destroy infected foliage.",
+    "prevention": "Adequate plant spacing, field sanitation, and resistant varieties."
+  }
+]

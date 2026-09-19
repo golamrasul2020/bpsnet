@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" data-root="../">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>News &amp; Announcements | Bangladesh Phytopathological Society</title>
+<meta name="description" content="Latest news, announcements, scientific updates and press releases from the Bangladesh Phytopathological Society.">
+<meta name="author" content="Bangladesh Phytopathological Society">
+<link rel="canonical" href="https://www.bps.net.bd/pages/news.html">
+<link rel="icon" href="../assets/images/logo/bps-logo.svg" type="image/svg+xml">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+<link href="../assets/css/style.css" rel="stylesheet">
+<link href="../assets/css/responsive.css" rel="stylesheet">
+<link href="../assets/css/animations.css" rel="stylesheet">
+</head>
+<body data-page="news">
+
+<div data-include="header.html"></div>
+
+<header class="page-header">
+  <div class="container">
+    <ul class="breadcrumb-nav"><li><a href="../index.html">Home</a></li><li class="active">News &amp; Media</li></ul>
+    <h1>News &amp; Announcements</h1>
+    <p class="text-white-50 mb-0">Stay up to date with BPS activities, scientific news and press releases.</p>
+  </div>
+</header>
+
+<section class="section-pad">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-8">
+        <div class="notice-demo reveal"><i class="bi bi-info-circle-fill"></i><div>Sample news items shown below for demonstration — content to be updated by BPS Administration.</div></div>
+        <div class="row g-4" id="newsGrid"></div>
+
+        <!-- PAGINATION -->
+        <nav aria-label="News pagination" class="mt-5">
+          <ul class="pagination justify-content-center">
+            <li class="page-item disabled"><a class="page-link" href="#" tabindex="-1">Previous</a></li>
+            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="sidebar-widget" id="announcements">
+          <h6>Categories</h6>
+          <ul>
+            <li><a href="#">Announcements <span>3</span></a></li>
+            <li><a href="#">BPS Activity <span>2</span></a></li>
+            <li><a href="#">Scientific News <span>1</span></a></li>
+            <li><a href="#">Press Release <span>1</span></a></li>
+          </ul>
+        </div>
+        <div class="sidebar-widget">
+          <h6>Related Links</h6>
+          <ul>
+            <li><a href="events.html">Upcoming Events <i class="bi bi-arrow-right"></i></a></li>
+            <li><a href="publications.html">Publications <i class="bi bi-arrow-right"></i></a></li>
+            <li><a href="gallery.html">Photo Gallery <i class="bi bi-arrow-right"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="newsModal" tabindex="-1" aria-labelledby="newsModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header"><h5 class="modal-title" id="newsModalLabel">News</h5><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
+        <div class="modal-body" id="newsModalBody"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div data-include="footer.html"></div>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/js/main.js"></script>
+<script src="../assets/js/filters.js"></script>
+</body>
+</html>

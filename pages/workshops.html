@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" data-root="../">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Workshops | Bangladesh Phytopathological Society</title>
+<meta name="description" content="Hands-on technical workshops covering diagnostic and laboratory methods, organized by BPS.">
+<meta name="author" content="Bangladesh Phytopathological Society">
+<link rel="canonical" href="https://www.bps.net.bd/pages/workshops.html">
+<link rel="icon" href="../assets/images/logo/bps-logo.svg" type="image/svg+xml">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+<link href="../assets/css/style.css" rel="stylesheet">
+<link href="../assets/css/responsive.css" rel="stylesheet">
+<link href="../assets/css/animations.css" rel="stylesheet">
+</head>
+<body data-page="events">
+
+<div data-include="header.html"></div>
+
+<header class="page-header">
+  <div class="container">
+    <ul class="breadcrumb-nav">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li class="active">Workshops</li>
+    </ul>
+    <h1>Workshops</h1>
+    <p class="text-white-50 mb-0">Practical, hands-on training in diagnostic and laboratory techniques.</p>
+  </div>
+</header>
+
+<section class="section-pad">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-8">
+        <span class="section-label">Overview</span>
+        <h2 class="section-title mb-3">Building Technical Skills</h2>
+        <p class="section-sub">BPS workshops provide practical training in plant disease diagnosis, molecular techniques, and laboratory best practices — equipping members with in-demand scientific skills.</p>
+        <div class="notice-demo reveal"><i class="bi bi-info-circle-fill"></i><div>Workshop listings below are sample/demo entries pending confirmation by BPS Administration.</div></div>
+        <div class="row g-4" id="workshopsGrid"></div>
+      </div>
+      <div class="col-lg-4">
+        <div class="sidebar-widget">
+          <h6>Event Categories</h6>
+          <ul>
+            <li><a href="conferences.html">Conferences <i class="bi bi-arrow-right"></i></a></li>
+            <li><a href="symposiums.html">Symposia <i class="bi bi-arrow-right"></i></a></li>
+            <li><a href="seminars.html">Seminars <i class="bi bi-arrow-right"></i></a></li>
+            <li><a href="webinars.html">Webinars <i class="bi bi-arrow-right"></i></a></li>
+            <li><a href="events.html">All Events <i class="bi bi-arrow-right"></i></a></li>
+          </ul>
+        </div>
+        <div class="sidebar-widget">
+          <h6><i class="bi bi-mortarboard-fill"></i> Related Training</h6>
+          <p class="text-muted small">See our full training and professional development catalog.</p>
+          <a href="training.html" class="btn btn-sm btn-outline-primary w-100">View Training Programs</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="eventModal" tabindex="-1" aria-labelledby="eventModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header"><h5 class="modal-title" id="eventModalLabel">Event Details</h5><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
+        <div class="modal-body" id="eventModalBody"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-pad bg-light-alt">
+  <div class="container">
+    <div class="cta-strip reveal">
+      <h3>Host a Workshop with BPS</h3>
+      <p>Institutions may partner with BPS to organize technical workshops.</p>
+      <a href="contact.html" class="btn btn-accent">Contact BPS <i class="bi bi-arrow-right"></i></a>
+    </div>
+  </div>
+</section>
+
+<div data-include="footer.html"></div>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/js/main.js"></script>
+<script src="../assets/js/filters.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  window.BPS.fetchJSON('events.json').then((data) => {
+    const list = data.filter((e) => e.type === 'Workshop');
+    window.__eventData = data;
+    const grid = document.getElementById('workshopsGrid');
+    grid.innerHTML = list.length ? list.map((ev) => `
+      <div class="col-md-6 reveal">
+        <div class="card-base event-card">
+          <div class="position-relative">
+            <img src="../assets/images/events/event-${ev.id}.webp" class="img-cover" alt="${ev.title}" loading="lazy">
+            <div class="event-date-badge"><i class="bi bi-calendar-event"></i><br>${ev.date}</div>
+          </div>
+          <div class="card-body-pad">
+            <span class="badge-soft mb-2 d-inline-block">${ev.type}</span>
+            <h5>${ev.title}</h5>
+            <p class="text-muted small"><i class="bi bi-geo-alt"></i> ${ev.location}</p>
+            <p class="text-muted small">${ev.description}</p>
+            <button class="btn btn-sm btn-primary-c w-100" data-bs-toggle="modal" data-bs-target="#eventModal" data-event-id="${ev.id}">Details</button>
+          </div>
+        </div>
+      </div>`).join('') : '<p class="text-muted">No workshop records found.</p>';
+    document.dispatchEvent(new CustomEvent('bps:contentRendered'));
+  });
+  document.body.addEventListener('click', function (e) {
+    const btn = e.target.closest('[data-event-id]');
+    if (!btn) return;
+    const ev = (window.__eventData || []).find((x) => x.id == btn.getAttribute('data-event-id'));
+    if (ev) {
+      document.getElementById('eventModalLabel').textContent = ev.title;
+      document.getElementById('eventModalBody').innerHTML = `<img src="../assets/images/events/event-${ev.id}.webp" class="img-cover rounded mb-3" style="height:220px" alt="${ev.title}"><p><strong>Type:</strong> ${ev.type}</p><p><strong>Date:</strong> ${ev.date}</p><p><strong>Location:</strong> ${ev.location}</p><p>${ev.description}</p>`;
+    }
+  });
+});
+</script>
+</body>
+</html>

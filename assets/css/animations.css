@@ -1,0 +1,15 @@
+.reveal{opacity:0;transform:translateY(30px);transition:opacity .7s ease,transform .7s ease}
+.reveal.active{opacity:1;transform:translateY(0)}
+.reveal-delay-1.active{transition-delay:.1s}
+.reveal-delay-2.active{transition-delay:.2s}
+.reveal-delay-3.active{transition-delay:.3s}
+.reveal-delay-4.active{transition-delay:.4s}
+
+@keyframes pulseSoft{0%,100%{transform:scale(1)}50%{transform:scale(1.05)}}
+.pulse-hover:hover{animation:pulseSoft 1s ease infinite}
+
+.fade-in{animation:fadeIn .6s ease both}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+
+.spin-slow{animation:spin 20s linear infinite}
+@keyframes spin{from{transform:rotate(0)}to{transform:rotate(360deg)}}

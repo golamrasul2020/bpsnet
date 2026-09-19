@@ -1,0 +1,42 @@
+bps-website/
+├── index.html
+├── robots.txt
+├── sitemap.xml
+├── components/
+│   ├── header.html          (top bar + main nav + mega menus)
+│   ├── footer.html          (4-column footer)
+│   └── newsletter.html      (reusable newsletter block)
+├── pages/
+│   ├── about.html
+│   ├── vision-mission.html
+│   ├── history.html
+│   ├── executive-committee.html
+│   ├── membership.html
+│   ├── research.html
+│   ├── plant-diseases.html
+│   ├── publications.html
+│   ├── events.html
+│   ├── news.html
+│   ├── training.html
+│   ├── gallery.html
+│   ├── contact.html
+│   └── member-login.html
+├── assets/
+│   ├── css/
+│   │   ├── style.css
+│   │   ├── responsive.css
+│   │   └── animations.css
+│   ├── js/
+│   │   ├── main.js
+│   │   ├── carousel.js
+│   │   ├── filters.js
+│   │   └── forms.js
+│   ├── data/
+│   │   ├── diseases.json
+│   │   ├── events.json
+│   │   ├── news.json
+│   │   ├── publications.json
+│   │   └── committee.json
+│   └── images/
+│       ├── logo/bps-logo.svg   ← replace with the uploaded BPS logo (keep filename)
+│       └── placeholder.svg     ← graceful fallback for missing photos

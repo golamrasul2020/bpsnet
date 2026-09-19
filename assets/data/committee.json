@@ -1,0 +1,12 @@
+[
+  { "id":1,"position":"President","name":"[Name — to be updated by BPS]","institution":"[Institution]","category":"Executive" },
+  { "id":2,"position":"Senior Vice President","name":"[Name — to be updated by BPS]","institution":"[Institution]","category":"Executive" },
+  { "id":3,"position":"Vice President","name":"[Name — to be updated by BPS]","institution":"[Institution]","category":"Executive" },
+  { "id":4,"position":"General Secretary","name":"[Name — to be updated by BPS]","institution":"[Institution]","category":"Executive" },
+  { "id":5,"position":"Joint Secretary","name":"[Name — to be updated by BPS]","institution":"[Institution]","category":"Executive" },
+  { "id":6,"position":"Treasurer","name":"[Name — to be updated by BPS]","institution":"[Institution]","category":"Executive" },
+  { "id":7,"position":"Office Secretary","name":"[Name — to be updated by BPS]","institution":"[Institution]","category":"Executive" },
+  { "id":8,"position":"Executive Member","name":"[Name — to be updated by BPS]","institution":"[Institution]","category":"Member" },
+  { "id":9,"position":"Advisory Board Member","name":"[Name — to be updated by BPS]","institution":"[Institution]","category":"Advisory" },
+  { "id":10,"position":"Fellow","name":"[Name — to be updated by BPS]","institution":"[Institution]","category":"Fellow" }
+]

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" data-root="../">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Advisory Board | Bangladesh Phytopathological Society</title>
+<meta name="description" content="Meet the Advisory Board members guiding the strategic direction of the Bangladesh Phytopathological Society.">
+<meta name="author" content="Bangladesh Phytopathological Society">
+<link rel="canonical" href="https://www.bps.net.bd/pages/advisory-board.html">
+<link rel="icon" href="../assets/images/logo/bps-logo.svg" type="image/svg+xml">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+<link href="../assets/css/style.css" rel="stylesheet">
+<link href="../assets/css/responsive.css" rel="stylesheet">
+<link href="../assets/css/animations.css" rel="stylesheet">
+</head>
+<body data-page="governance">
+
+<div data-include="header.html"></div>
+
+<header class="page-header">
+  <div class="container">
+    <ul class="breadcrumb-nav">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="executive-committee.html">Governance</a></li>
+      <li class="active">Advisory Board</li>
+    </ul>
+    <h1>Advisory Board</h1>
+    <p class="text-white-50 mb-0">Senior scientists providing strategic guidance to BPS leadership.</p>
+  </div>
+</header>
+
+<section class="section-pad">
+  <div class="container">
+    <span class="section-label">Governance</span>
+    <h2 class="section-title mb-3">Our Advisory Board</h2>
+    <p class="section-sub mb-4">The Advisory Board comprises senior plant pathologists and agricultural scientists who provide strategic counsel to BPS's Executive Committee on research priorities, institutional partnerships and long-term direction.</p>
+
+    <div class="notice-demo reveal"><i class="bi bi-info-circle-fill"></i><div>Advisory Board members will be listed here once confirmed by BPS Administration.</div></div>
+
+    <div class="row g-4" id="committeeGrid"></div>
+  </div>
+</section>
+
+<section class="section-pad bg-light-alt">
+  <div class="container">
+    <div class="cta-strip reveal">
+      <h3>Meet Our Full Leadership</h3>
+      <p>View the complete BPS Executive Committee directory.</p>
+      <a href="executive-committee.html" class="btn btn-accent">View Executive Committee <i class="bi bi-arrow-right"></i></a>
+    </div>
+  </div>
+</section>
+
+<div data-include="footer.html"></div>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/js/main.js"></script>
+<script src="../assets/js/filters.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  window.BPS.fetchJSON('committee.json').then((data) => {
+    const list = data.filter((m) => m.category === 'Advisory');
+    const grid = document.getElementById('committeeGrid');
+    grid.innerHTML = list.length ? list.map((m) => `
+      <div class="col-lg-3 col-md-4 col-sm-6 reveal">
+        <div class="card-base committee-card">
+          <img src="../assets/images/committee/member-${m.id}.webp" class="committee-photo" alt="${m.position}" loading="lazy">
+          <h5>${m.name}</h5><span class="committee-position">${m.position}</span><span class="committee-institution">${m.institution}</span>
+        </div>
+      </div>`).join('') : '<p class="text-muted">Advisory Board list to be confirmed by BPS Administration.</p>';
+    document.dispatchEvent(new CustomEvent('bps:contentRendered'));
+  });
+});
+</script>
+</body>
+</html>

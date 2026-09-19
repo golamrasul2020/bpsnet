@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" data-root="../">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Publications | Bangladesh Phytopathological Society</title>
+<meta name="description" content="Explore the Bangladesh Journal of Plant Pathology, research articles, proceedings, newsletters and bulletins from BPS.">
+<meta name="author" content="Bangladesh Phytopathological Society">
+<link rel="canonical" href="https://www.bps.net.bd/pages/publications.html">
+<link rel="icon" href="../assets/images/logo/bps-logo.svg" type="image/svg+xml">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+<link href="../assets/css/style.css" rel="stylesheet">
+<link href="../assets/css/responsive.css" rel="stylesheet">
+<link href="../assets/css/animations.css" rel="stylesheet">
+</head>
+<body data-page="publications">
+
+<div data-include="header.html"></div>
+
+<header class="page-header">
+  <div class="container">
+    <ul class="breadcrumb-nav"><li><a href="../index.html">Home</a></li><li class="active">Publications</li></ul>
+    <h1>Publications Center</h1>
+    <p class="text-white-50 mb-0">Journal issues, research articles, proceedings, newsletters and bulletins.</p>
+  </div>
+</header>
+
+<!-- JOURNAL SPOTLIGHT -->
+<section class="section-pad" id="journal">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-5 reveal">
+        <img src="../assets/images/publications/journal-cover.webp" alt="Bangladesh Journal of Plant Pathology cover" class="rounded shadow">
+      </div>
+      <div class="col-lg-7 reveal reveal-delay-1">
+        <span class="section-label">Flagship Journal</span>
+        <h2 class="section-title">Bangladesh Journal of Plant Pathology (BJPP)</h2>
+        <p class="section-sub">BJPP is the Society's peer-reviewed scientific journal, publishing original research and reviews across all disciplines of plant pathology.</p>
+        <ul class="about-list">
+          <li><i class="bi bi-check-circle-fill"></i> Peer-reviewed original research articles</li>
+          <li><i class="bi bi-check-circle-fill"></i> Review articles and short communications</li>
+          <li><i class="bi bi-check-circle-fill"></i> Published periodically for BPS members and subscribers</li>
+        </ul>
+        <a href="#downloads" class="btn btn-primary-c">Browse Latest Issue <i class="bi bi-arrow-right"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FILTER + LIST -->
+<section class="section-pad bg-light-alt" id="articles">
+  <div class="container">
+    <div class="section-header text-center reveal">
+      <span class="section-label d-inline-flex mx-auto">Browse</span>
+      <h2 class="section-title">All Publications</h2>
+    </div>
+    <div class="row g-3 mb-4 reveal">
+      <div class="col-lg-5"><input type="text" id="pubSearch" class="form-control" placeholder="Search by title or author..."></div>
+      <div class="col-lg-3">
+        <select id="pubYear" class="form-select">
+          <option value="">All Years</option>
+          <option value="2024">2024</option><option value="2023">2023</option><option value="2022">2022</option>
+        </select>
+      </div>
+      <div class="col-lg-4">
+        <select id="pubType" class="form-select">
+          <option value="">All Types</option>
+          <option value="Journal">Journal</option>
+          <option value="Research Article">Research Article</option>
+          <option value="Proceedings">Proceedings</option>
+          <option value="Newsletter">Newsletter</option>
+          <option value="Bulletin">Bulletin</option>
+          <option value="Research Report">Research Report</option>
+        </select>
+      </div>
+    </div>
+    <div class="row g-4" id="publicationsGrid"></div>
+  </div>
+</section>
+
+<!-- PROCEEDINGS / NEWSLETTERS / DOWNLOADS -->
+<section class="section-pad" id="proceedings">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4 reveal">
+        <div class="sidebar-widget h-100">
+          <h6><i class="bi bi-journal-bookmark-fill"></i> Proceedings</h6>
+          <p class="text-muted small">Conference and symposium proceedings compiled by BPS after major scientific events.</p>
+          <a href="events.html#conferences" class="btn btn-sm btn-outline-primary w-100">View Related Events</a>
+        </div>
+      </div>
+      <div class="col-lg-4 reveal reveal-delay-1" id="newsletters">
+        <div class="sidebar-widget h-100">
+          <h6><i class="bi bi-newspaper"></i> Newsletters &amp; Bulletins</h6>
+          <p class="text-muted small">Periodic newsletters and advisory bulletins on plant health topics of national interest.</p>
+          <a href="news.html" class="btn btn-sm btn-outline-primary w-100">View News</a>
+        </div>
+      </div>
+      <div class="col-lg-4 reveal reveal-delay-2" id="downloads">
+        <div class="sidebar-widget h-100">
+          <h6><i class="bi bi-download"></i> Download Center</h6>
+          <p class="text-muted small">All publication PDFs are downloadable directly from their respective cards above.</p>
+          <a href="#articles" class="btn btn-sm btn-primary-c w-100">Back to Publications</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-pad bg-light-alt">
+  <div class="container">
+    <div class="cta-strip reveal">
+      <h3>Submit Your Research to BJPP</h3>
+      <p>BPS members are encouraged to submit original research for peer review and publication.</p>
+      <a href="contact.html" class="btn btn-accent">Contact Editorial Board <i class="bi bi-arrow-right"></i></a>
+    </div>
+  </div>
+</section>
+
+<div data-include="footer.html"></div>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/js/main.js"></script>
+<script src="../assets/js/filters.js"></script>
+</body>
+</html>

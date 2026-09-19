@@ -1,0 +1,8 @@
+[
+  { "id":1,"type":"Journal","year":"2024","title":"Bangladesh Journal of Plant Pathology — Vol. [XX], Issue [X]","author":"[Editorial Board — BPS]","demo":true },
+  { "id":2,"type":"Research Article","year":"2023","title":"Occurrence and Management of Foliar Fungal Diseases in Rice [Sample Title]","author":"[Author(s) to be updated]","demo":true },
+  { "id":3,"type":"Proceedings","year":"2023","title":"Proceedings of the BPS Biennial Conference [Sample]","author":"[BPS Secretariat]","demo":true },
+  { "id":4,"type":"Newsletter","year":"2024","title":"BPS Quarterly Newsletter [Sample Issue]","author":"[BPS Secretariat]","demo":true },
+  { "id":5,"type":"Bulletin","year":"2022","title":"Advisory Bulletin on Vegetable Disease Management [Sample]","author":"[Research Committee]","demo":true },
+  { "id":6,"type":"Research Report","year":"2022","title":"Survey Report on Emerging Plant Viral Diseases [Sample]","author":"[Research Committee]","demo":true }
+]

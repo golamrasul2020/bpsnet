@@ -1,0 +1,8 @@
+[
+  { "id":1,"title":"Biennial International Conference on Plant Pathology","type":"Biennial Conference","status":"upcoming","date":"[Date to be announced]","location":"Dhaka, Bangladesh","description":"Flagship scientific gathering of BPS bringing together phytopathologists, researchers and policymakers.","demo":true },
+  { "id":2,"title":"National Symposium on Plant Health & Food Security","type":"Symposium","status":"upcoming","date":"[Date to be announced]","location":"BARI, Gazipur","description":"A symposium addressing emerging plant health threats to national food security.","demo":true },
+  { "id":3,"title":"Workshop on Modern Plant Disease Diagnosis","type":"Workshop","status":"upcoming","date":"[Date to be announced]","location":"BAU, Mymensingh","description":"Hands-on training in molecular and serological diagnostic techniques.","demo":true },
+  { "id":4,"title":"Webinar: Emerging & Re-emerging Plant Diseases","type":"Webinar","status":"upcoming","date":"[Date to be announced]","location":"Online","description":"An expert panel discussion on new disease threats to Bangladeshi agriculture.","demo":true },
+  { "id":5,"title":"Seminar on Integrated Disease Management","type":"Seminar","status":"past","date":"[Archived]","location":"Dhaka, Bangladesh","description":"A seminar on sustainable, ecology-based disease management strategies.","demo":true },
+  { "id":6,"title":"Annual General Meeting","type":"Annual Meeting","status":"past","date":"[Archived]","location":"BARI, Gazipur","description":"Annual meeting of BPS general members and executive committee.","demo":true }
+]
