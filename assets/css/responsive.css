@@ -1,3 +1,13 @@
+/* Ensure the document itself remains vertically scrollable on every viewport. */
+html {
+  overflow-y: auto;
+}
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
 
 @media (max-width:991.98px){
   .header-top{ padding:12px 0; }
