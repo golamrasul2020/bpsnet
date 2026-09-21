@@ -14,6 +14,28 @@ body {
   .site-logo-img{ height:54px; }
   .site-tagline{ display:none; }
   .header-top-actions{ display:none!important; }
+
+  /* The mobile brand is declared immediately before <header> in the shared
+     component. Keep it in the same visual row as the sticky navigation. */
+  .navbar-brand-mobile{
+    display:flex!important;
+    position:absolute;
+    left:12px;
+    top:0;
+    height:100%;
+    align-items:center;
+    padding:8px 0;
+    z-index:2;
+  }
+  .main-navbar > .container{
+    position:relative;
+    min-height:58px;
+  }
+  .main-navbar .navbar-toggler{
+    position:relative;
+    z-index:3;
+    margin-left:auto;
+  }
   .main-navbar .navbar-collapse{
     background:var(--primary-dark);
     border-radius:0 0 12px 12px;
