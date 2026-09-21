@@ -15,8 +15,7 @@ body {
   .site-tagline{ display:none; }
   .header-top-actions{ display:none!important; }
 
-  /* The mobile brand is declared immediately before <header> in the shared
-     component. Keep it in the same visual row as the sticky navigation. */
+  /* Keep the mobile brand and toggler visible in the same navbar row. */
   .navbar-brand-mobile{
     display:flex!important;
     position:absolute;
@@ -31,10 +30,21 @@ body {
     position:relative;
     min-height:58px;
   }
+
+  /* The desktop rule sets this icon to white, while the mobile navbar is
+     white. Override it so the hamburger remains visible on small screens. */
   .main-navbar .navbar-toggler{
+    display:block!important;
     position:relative;
     z-index:3;
     margin-left:auto;
+    color:var(--primary-color)!important;
+    background:transparent;
+    border:0;
+    opacity:1!important;
+  }
+  .main-navbar .navbar-toggler i{
+    color:inherit;
   }
   .main-navbar .navbar-collapse{
     background:var(--primary-dark);
